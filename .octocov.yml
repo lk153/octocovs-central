@@ -1,0 +1,9 @@
+central:
+  reports:
+    datastores:
+      - artifact://lk153/gsheet-go
+  badges:
+    datastores:
+      - local://badges
+  push:
+    enable: true
