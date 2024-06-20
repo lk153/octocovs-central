@@ -17,13 +17,5 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v4
 
-      - name: Setup Go
-        uses: actions/setup-go@v4
-        with:
-          go-version-file: go.mod
-
-      - name: Run tests with coverage report output
-        run: go test ./... -coverprofile=coverage.out
-
       - name: Run octocov
         uses: k1LoW/octocov-action@v1
