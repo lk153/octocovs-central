@@ -17,7 +17,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run octocov
         uses: k1LoW/octocov-action@v1
